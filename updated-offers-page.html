@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عروض اليوم الوطني - مصنع الابداع للرخام</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
     <style>
         :root {
             --dark-green: #1a5130;
             --medium-green: #2d7d46;
             --light-green: #43b02a;
         }
+
         body {
             font-family: 'Tajawal', sans-serif;
             background-color: #f0f0f0;
@@ -18,60 +21,72 @@
             line-height: 1.6;
             margin: 0;
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
+
         .main-header {
             background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
         }
+
         .main-nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px 0;
         }
-        .logo {
+
+        /* .logo {
             height: 50px;
             width: auto;
-        }
+        } */
+
         .nav-links {
             display: flex;
             gap: 20px;
         }
+
         .nav-links a {
             color: #333;
             text-decoration: none;
             transition: color 0.3s ease;
         }
+
         .nav-links a:hover {
             color: var(--medium-green);
         }
+
         .header {
             background-color: var(--dark-green);
             color: white;
             padding: 40px 0;
             text-align: center;
         }
+
         .header h1 {
             margin: 0;
             font-size: 2.5rem;
         }
+
         .main-content {
             background-image: url('path/to/background-pattern.png');
             background-repeat: repeat;
             padding: 40px 0;
         }
+
         .offer-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
+
         .offer-card {
             background-color: white;
             border-radius: 10px;
@@ -79,21 +94,26 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
+
         .offer-card:hover {
             transform: translateY(-5px);
         }
+
         .offer-card img {
             width: 100%;
             height: 200px;
             object-fit: cover;
         }
+
         .offer-content {
             padding: 20px;
         }
+
         .offer-content h3 {
             color: var(--medium-green);
             margin-top: 0;
         }
+
         .btn {
             display: inline-block;
             background-color: var(--light-green);
@@ -103,9 +123,11 @@
             text-decoration: none;
             transition: background-color 0.3s ease;
         }
+
         .btn:hover {
             background-color: var(--medium-green);
         }
+
         .cta-section {
             background-color: var(--dark-green);
             color: white;
@@ -113,9 +135,11 @@
             padding: 60px 0;
             margin-top: 40px;
         }
+
         .cta-section h2 {
             margin-bottom: 20px;
         }
+
         .footer {
             background-color: #333;
             color: white;
@@ -125,17 +149,19 @@
         }
     </style>
 </head>
+
 <body>
     <header class="main-header">
         <nav class="container main-nav">
-            <img src="/path/to/logo.png" alt="شعار مصنع الابداع للرخام" class="logo">
+            <img src="images/logo.png" alt="شعار مصنع الابداع للرخام" class="logo h-12">
             <div class="nav-links">
-                <a href="index.html">الرئيسية</a>
-                <a href="#">من نحن</a>
-                <a href="#">خدماتنا</a>
-                <a href="#">مشاريعنا</a>
-                <a href="#">اتصل بنا</a>
-                <a href="#" style="font-weight: bold;">عروض اليوم الوطني السعودي</a>
+                <a href="/index.html" class="text-gray-800 hover:text-gray-600 ml-2">الرئيسية</a>
+                <a href="/about.html" class="text-gray-800 hover:text-gray-600">من نحن</a>
+                <a href="/services.html" class="text-gray-800 hover:text-gray-600">خدماتنا</a>
+                <a href="/projects.html" class="text-gray-800 hover:text-gray-600">مشاريعنا</a>
+                <a href="/contact.html" class="text-gray-800 hover:text-gray-600">اتصل بنا</a>
+                <a href="/privacy-policy.html" class="text-gray-800 hover:text-gray-600">سياسة الخصوصية</a>
+                <a href="#" class="text-gray-800 hover:text-gray-600 font-bold">عروض اليوم الوطني</a>
             </div>
         </nav>
     </header>
@@ -192,4 +218,5 @@
         </div>
     </footer>
 </body>
+
 </html>
