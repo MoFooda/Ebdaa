@@ -5,3 +5,8 @@
 .font-bold {
     font-weight: 700 !important;
 }
+
+.collapse,
+.collapse.show {
+    visibility: visible !important;
+}
